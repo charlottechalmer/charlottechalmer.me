@@ -1,0 +1,50 @@
+/*COLOR SCHEME:
+	teal color: #0C7A56;
+	yellow: #E3CB80;
+
+
+*/
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+#wrapper, .container-fluid {
+	height: 100%;
+}
+
+.menu {
+	background: url("http://www.space.com/images/i/000/041/737/original/milky-way-chile-praniski.jpg") no-repeat;
+	height: 100%;
+}
+
+.main {
+	background-color: #021615;
+	text-align: center;
+}
+
+.main > h2 {
+	color: #E3CB80;
+	padding-bottom: 5px;	
+}
+
+ul {
+	list-style-type: none;
+}
+
+.menu li {
+	padding: 2em .1em .1em .1em;
+	text-align: center;
+	font-size: 1.5em;
+	color: #0C7A56;
+}
+
+.menu li:hover {
+	color: #E3CB80;
+}
+
+@media screen and (max-width: 991px) {
+	.menu li {
+		margin-left: -2em;
+	}
+}
