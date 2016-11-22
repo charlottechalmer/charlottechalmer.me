@@ -4,26 +4,66 @@
 	<meta charset="UTF-8">
 	<title>Charlotte Chalmer</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row" id="wrapper">
-			<div class="menu  col-xs-2 col-md-3">
-				<ul>
-					<li>About Charlotte</li>
-					<li>Portfolio</li>
-					<li>
-						Resume 
-					</li>
-					<li>Contact</li>
-
-				</ul>
+		<div class="row" id="headers">
+			<div class="menu col-xs-3">
+			<a><span class="home-button glyphicon glyphicon-home" aria-hidden="true"></span></a>
+				<div>
+					<div class="col-xs-12 menu-item"><a id="about-me-nav">About Me</a></div>
+					<div class="col-xs-12 menu-item"><a>Portfolio</a></div>
+					<div class="col-xs-12 menu-item"><a href="./resume.html">Resume</a></div>
+					<div class="col-xs-12 menu-item"><a>Contact</a></div>
+				</div>
 			</div>
-	<div class="col-xs-10 col-md-9 main">
-		<h2>Charlotte Chalmer Taylor</h2>
-	</div>
-	</div>
+			<div class="col-xs-9 main">
+				<h1>Charlotte Chalmer Taylor</h1>
+				<p class="tag">THINKING OUTSIDE OF THE BOX SINCE 1993</p>
+			</div>
+			<!-- AUTO CONTENT -->
+			<div class="col-xs-9 content auto-content-div" style="display: block">
+				<div class="col-xs-8 col-xs-offset-2 intro">
+					<div class="col-xs-4"><img src="charlotte.jpg"></div>
+					<ul class="random-info col-xs-8">
+						<li>Code Craft School of Technology Graduate</li>
+						<li class="indent">Full-Stack Web Development</li>
+						<li>Dickinson College Graduate</li>
+						<li class="indent">Psychology Major</li>
+						<li>Modern-day Martha Stewart <span>+ extra sass</span></li>
+						<li>ENFP</li>
+						<li>Parallel parking pro</li>
+						<li>Carnivore</li>
+						<li>Music aficionado</li>
+						<li>Dog enthusiast</li>
+					</ul>
+				</div>
+			</div>
+			<!-- ABOUT ME CONTENT -->
+			<div class="col-xs-9 content about-me-div" style="display: none">
+				<img src="aboutme.jpg">
+
+				<div class="col-xs-8 col-xs-offset-2 about-me">
+				<h2 class="header-font">About Me</h2>
+				<p class="about-me-text body-font">
+					This is sample text where I am going to talk about myself and how i got here etc etc etc i need to write more so that I can see how the words wrap and how big the content is
+				</p>
+
+				</div>
+
+
+			</div>
+
+
+		</div>
 	</div>
 
 
@@ -31,5 +71,16 @@
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>	
+
+	<script type="text/javascript">
+		$(".home-button").click(function() {
+			$(".auto-content-div").css({"display": "block"});
+		});
+ 		$("#about-me-nav").click(function(){
+ 			$(".auto-content-div").css({"display": "none"});
+ 			$(".about-me-div").css({"display": "block"});
+ 		});
+
+	</script>
 </body>
 </html>

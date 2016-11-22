@@ -1,0 +1,235 @@
+
+body {
+	overflow-x: hidden;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;	
+	margin-left: 8.5%;
+	margin-right: 8.4%;
+	background-color: white;
+}
+
+html {
+	background-color: lightgrey;
+}
+
+.home-button {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	color: #021F1D;
+	font-size: 1.5em;
+	transition: linear 0.5s;
+}
+
+.home-button:hover {
+	color: #E3CB80;
+	text-shadow: 2px 2px 4px #021F1D;
+}
+
+.jumbotron {
+	padding: 1.5rem;
+	background-color: #021F1D;
+	color: white;
+	margin: 0;
+}
+
+.jumbotron h2 {
+	font-family: "Big Caslon";
+}
+.jumbotron h2 span {
+	font-size: 3.7rem;
+}
+.jumbotron ul  {
+	list-style-type: none;
+	padding-left: 0;
+	padding-right: 0;
+	font-size: 1.2rem;
+	padding-top: 2.5rem;
+}
+
+/*@media (max-width: 992px) {
+	.jumbotron ul {
+		font-size: .7em;
+	}
+}*/
+
+.smallWhite {
+	height: .3rem;
+	background-color: white;
+	margin-right: -3rem;
+	margin-left: -3rem;
+	margin-top: 1.5rem;
+	border-right: .1rem solid #b3b3b3;
+	border-left: .1rem solid #b3b3b3
+}
+
+h4, h5, h6 {
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+}
+
+h4 {
+	letter-spacing: .2rem;
+	text-indent: .7rem;
+	font-weight: bolder;
+}
+
+
+.border {
+	border-bottom: .1rem solid #b3b3b3;
+	padding-top: .5rem;
+}
+
+.desc {
+	margin-top: 0;
+	margin-bottom: .25rem;
+	text-align: center;
+	font-weight: bold;
+	font-size: none;
+}
+
+h5 {
+	font-weight: bolder;
+	font-size: 1.6rem;
+	padding-left: .5rem;
+	margin-top: 0;
+}
+
+.head2 {
+	font-style: italic;
+	font-size: 1.4rem;
+	padding-left: 1rem;
+}
+
+
+.relevantExperience td p {
+	text-align: right;
+	padding-right: 1rem
+}
+
+
+/*tr, td {
+border: 1px solid red;
+}*/
+/*TO BE DELETED- FOR TESTING PURPOSES*/
+.whiteBody {
+	border-left: .1rem solid #b3b3b3;
+	border-right: .1rem solid #b3b3b3;
+}
+
+.rightColumn {
+	border-left: .1rem solid #b3b3b3;
+}
+
+@media (max-width: 992px) {
+	.rightColumn {
+		text-align: center;
+	}
+}
+
+.rightColumn td p {
+	padding-left: 1rem;
+}
+
+
+.tableSkills {
+	list-style-type: none;
+	margin: auto;
+}
+
+.tableSkills tr {
+	border-bottom: .1rem solid #b3b3b3;
+}
+
+.tableSkills p {
+	font-size: 1.1rem;	
+	margin-left: -1rem;
+	margin-top: .4rem;
+}
+
+.obj {
+	white-space: nowrap;
+}
+
+.obj .grey {
+	color: #b3b3b3;
+}
+
+#DSonSeal {
+	width: 12rem;
+	margin: auto;
+	display: block;
+	filter: grayscale(100%);
+	padding-bottom: 1rem;
+}
+
+.connect {
+	text-align: center;
+}
+
+.connect .fa {
+	padding: 1rem;
+}
+
+.connect a:link, a:visited {
+	text-decoration: none;
+	color: #b3b3b3;
+}
+.connect a:hover {
+	text-decoration: none;
+	color: #021F1D;
+}
+
+#githubQR {
+	width: 13rem;
+	display: block;
+	margin: auto;
+
+}
+
+.scanText {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.ref {
+	padding-top: 0;
+	padding-bottom: 1rem;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.footer, .smallBlue, .whiteLine, .bigBlue {
+	border-right: .1rem solid #b3b3b3;
+	border-left: .1rem solid #b3b3b3;
+}
+
+
+.smallBlue {
+	background-color: #021F1D;
+	margin: 0;
+	height: .7rem;
+	margin-right: -1.6rem;
+	margin-left: -1.6rem;
+}
+
+.whiteLine {
+	height: .3rem;
+	background-color: white;
+	margin-right: -1.6rem;
+	margin-left: -1.6rem;
+}
+
+.bigBlue {
+	background-color: #021F1D;
+	height: 7rem;
+	margin-right: -1.6rem;
+	margin-left: -1.6rem;
+}
+
+.copyright {
+	text-align: center;
+	color: white;
+	padding-top: 5rem;
+	font-size: .7rem;
+}
+
