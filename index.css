@@ -5,13 +5,6 @@
 
 
 */
-
-body, html {
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-}
-
 .home-button {
 	position: absolute;
 	top: 15px;
@@ -28,19 +21,19 @@ body, html {
 
 .header-font {
 	font-family: 'Raleway Dots', Helvetica;
+	color: #E3CB80;
 }
 
 .body-font {
 	font-family: 'Josefin Sans', sans-serif;
+	color: #021615;
 }
 
-#headers, .container-fluid {
-	height: 100%;
-}
 
 .menu {
-	background: url("http://www.space.com/images/i/000/041/737/original/milky-way-chile-praniski.jpg") no-repeat;
-	height: 100%;
+	height: 800px;
+	background: url("menu-background.jpg") no-repeat;
+	background-size: cover;
 }
 
 .main {
@@ -109,8 +102,26 @@ body, html {
 }
 
 .content {
-	height: 100%;
-	background-color: rgba(12, 122, 86, 0.32) ;
+	height: 709px;
+	background-color: rgba(12, 122, 86, 0.32);
+}
+
+@media screen and (max-width: 912px) {
+	.content {
+		height: 670px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.content{
+		height: 646px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.content {
+		height: 607px;
+	}
 }
 
 .content .intro {
@@ -129,7 +140,7 @@ body, html {
 
 .content .intro img {
 	height: auto;
-	width: 10vw;
+	width: 9em;
 	border-radius: 5%;
 	border: 0.1px solid #E3CB80;
 }
@@ -159,17 +170,39 @@ body, html {
 	font-size: 0.8em;
 }
 
+
 .about-me-div img {
 	padding-top: 1em;
 	width: 100%;
 }
 
 .about-me {
-	margin-top: 1em;
-	height: 10em;
+	height: 18em;
 	background-color: #0C7A56;
 	border-radius: 5px;
+	overflow-y: scroll !important;
+	box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.35);
 }
+
+.caption {
+	font-size: 0.9em;
+	text-align: center;
+}
+
+.about-me .header-first {
+	text-align: center;
+}
+
+.about-me::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+.about-me::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
 .about-me h2 {
 	text-align: center;
 	color: #E3CB80;
@@ -179,3 +212,44 @@ body, html {
 	color: #021615;
 }
 
+.about-me a {
+	color: #17E8A4;
+	text-decoration: underline;
+}
+
+.about-me a:hover {
+	color: #E3CB80;
+}
+
+.about-me-links {
+	margin-top: 1em;
+	height: 8em;
+	background-color: #0C7A56;
+	border-radius: 5px;
+	overflow-y: scroll !important;
+	box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+.about-me-links h3 {
+	text-align: center;
+}
+
+.about-me-links li{
+	list-style-type: none;
+}
+
+.about-me-links li:before {
+  content: "\2605";
+  padding-right: 2em;
+  color: #021615;
+  font-size: 0.7em;
+}
+
+.about-me-links a {
+	color: #17E8A4;
+	text-decoration: underline;
+}
+
+.about-me-links a:hover {
+	color: #E3CB80;
+}

@@ -17,12 +17,15 @@
 	<div class="container-fluid">
 		<div class="row" id="headers">
 			<div class="menu col-xs-3">
-			<a><span class="home-button glyphicon glyphicon-home" aria-hidden="true"></span></a>
-				<div>
-					<div class="col-xs-12 menu-item"><a id="about-me-nav">About Me</a></div>
-					<div class="col-xs-12 menu-item"><a>Portfolio</a></div>
-					<div class="col-xs-12 menu-item"><a href="./resume.html">Resume</a></div>
-					<div class="col-xs-12 menu-item"><a>Contact</a></div>
+				<div class="menu-content">
+					<a><span class="home-button glyphicon glyphicon-home" aria-hidden="true"></span></a>
+					<div>
+						<div class="col-xs-12 menu-item"><a id="about-me-nav">About Me</a></div>
+						<div class="col-xs-12 menu-item"><a>Portfolio</a></div>
+						<div class="col-xs-12 menu-item"><a href="./resume.html">Resume</a></div>
+						<div class="col-xs-12 menu-item"><a>Contact</a></div>
+						<div></div>
+					</div>
 				</div>
 			</div>
 			<div class="col-xs-9 main">
@@ -50,19 +53,29 @@
 			<!-- ABOUT ME CONTENT -->
 			<div class="col-xs-9 content about-me-div" style="display: none">
 				<img src="aboutme.jpg">
-
+				<p class="caption body-font"><em>My project planning for the CodeCraft hackathon</em></p>
 				<div class="col-xs-8 col-xs-offset-2 about-me">
 				<h2 class="header-font">About Me</h2>
 				<p class="about-me-text body-font">
-					This is sample text where I am going to talk about myself and how i got here etc etc etc i need to write more so that I can see how the words wrap and how big the content is
+					<p class="header-first body-font"><em>Hi! I'm Charlotte. I love building things and meeting new people. I have found a passion in web development and am exited to see where this path is going to take me.</em></p>
+					<p class="body-font">
+					After graduating from a small liberal arts school with a bachelor degree in psychology, I decided to attend <a href="https://www.codecraftschool.com/">CodeCraft School of Technology</a>, a web-development bootcamp that focuses on the MEAN stack. I have graduated with a professional certification in full-stack web development.
+					</p>
+					<p class="body-font">
+					While attending CodeCraft, I found that I am perfectly suited for web-development. Although two very different areas of study, it has been extremely rewarding to find the interconnectedness between web development and psychology in my side projects. I used this connection to build my CodeCraft final app <a href="http://www.pollarise.co">Poll Arise</a>. I have also always had an aptitude toward learning new information and excel under pressure, two qualities that have greatly benefited me in my pursuit of becoming a web-developer. 
+					</p>
+					<p class="body-font">
+					In addition to writing code in my spare time, I love finding good music to share with others, reading (especially satirical novels), cooking / baking, crafting and petting pretty much any dog I see.</p>
 				</p>
-
 				</div>
-
-
+				<div class="about-me-links col-xs-8 col-xs-offset-2">
+					<h3 class="header-font">Learn More About Me</h3>
+					<ul>
+						<li class="body-font"><a href="https://www.codecraftschool.com/meet-our-november-2016-full-stack-web-development-graduates/">CodeCraft Q&A Interview</a></li>
+						<li class="body-font"><a href="thesis.pdf" onclick="window.open('thesis.pdf', '_blank', 'fullscreen=yes'); return false;">Senior Research Thesis</a></li>
+					</ul>
+				</div>
 			</div>
-
-
 		</div>
 	</div>
 
@@ -75,6 +88,7 @@
 	<script type="text/javascript">
 		$(".home-button").click(function() {
 			$(".auto-content-div").css({"display": "block"});
+			$(".about-me-div").css({"display": "none"});
 		});
  		$("#about-me-nav").click(function(){
  			$(".auto-content-div").css({"display": "none"});
