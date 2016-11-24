@@ -2,7 +2,7 @@
 	teal: #0C7A56;
 	yellow: #E3CB80;
 	dark green: #021615;
-
+	bright tea: #17E8A4;
 
 */
 .home-button {
@@ -32,8 +32,14 @@
 
 .menu {
 	height: 800px;
-	background: url("menu-background.jpg") no-repeat;
+	background: url("images/menu-background.jpg") no-repeat;
 	background-size: cover;
+}
+
+.glyphicon-triangle-bottom {
+	font-size: 0.5em;
+	color: #0C7A56;
+	transition: linear .35s;
 }
 
 .main {
@@ -60,7 +66,7 @@
 }
 
 .menu-item:first-child {
-	padding-top: 4.5em;
+	padding-top: 2em;
 }
 
 .menu-item {
@@ -97,6 +103,11 @@
 }
 
 .menu a:hover {
+	color: #E3CB80;
+	text-decoration: none;
+}
+
+.menu a:hover > .glyphicon-triangle-bottom {
 	color: #E3CB80;
 	text-decoration: none;
 }
@@ -232,6 +243,8 @@
 
 .about-me-links h3 {
 	text-align: center;
+	margin: 0;
+	padding: 0.5em 0 0 0;
 }
 
 .about-me-links li{
@@ -245,11 +258,88 @@
   font-size: 0.7em;
 }
 
-.about-me-links a {
+.about-me-links a, .about-me-links a:active, .about-me-links a:visited {
 	color: #17E8A4;
 	text-decoration: underline;
 }
 
 .about-me-links a:hover {
 	color: #E3CB80;
+}
+
+.contact-div {
+	height: 9.5em;
+	background-color: #021615;
+}
+
+.linked-contact {
+	padding-top: 0.8em;
+}
+
+.contact-item:first-child {
+	padding-top: 0.5em;
+	padding-bottom: 0;
+}
+
+.contact-item i {
+	color: #0C7A56;
+	padding-right: 0.8em;
+	font-size: 1.2em;
+}
+
+.contact-item p {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #E3CB80;
+	font-size: 1em;
+	display: inline-block;
+}
+
+.contact-item a {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #E3CB80;
+	font-size: 1em;
+}
+
+.contact-item a:hover {
+	text-decoration: underline;
+}
+
+.portfolio {
+	margin-top: 1em; 
+	height: 35em;
+	background-color: #0C7A56;
+	border-radius: 5px;
+	overflow-y: scroll !important;
+	box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+.portfolio-header {
+	text-align: center;
+}
+
+.portfolio-header-text {
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.portfolio-item {
+	border: 1px dotted #E3CB80;
+	border-radius: 5px;
+	padding: 0.5em;
+	margin: 1em;
+}
+
+.portfolio-item-header {
+	display: inline-block;
+}
+
+.portfolio-item-header:hover {
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.portfolio-item p {
+	padding-left: 1em;
+	display: inline-block;
 }

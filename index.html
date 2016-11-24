@@ -12,6 +12,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 </head>
 <body>
 	<div class="container-fluid">
@@ -21,10 +23,15 @@
 					<a><span class="home-button glyphicon glyphicon-home" aria-hidden="true"></span></a>
 					<div>
 						<div class="col-xs-12 menu-item"><a id="about-me-nav">About Me</a></div>
-						<div class="col-xs-12 menu-item"><a>Portfolio</a></div>
+						<div class="col-xs-12 menu-item"><a id="portfolio-nav">Portfolio</a></div>
 						<div class="col-xs-12 menu-item"><a href="./resume.html">Resume</a></div>
-						<div class="col-xs-12 menu-item"><a>Contact</a></div>
-						<div></div>
+						<div class="col-xs-12 menu-item"><a id="contact-nav">Contact <div class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></div></a></div>
+						<div class="contact-div col-xs-12 hide" >
+							<div class="contact-item linked-contact"><i class="fa fa-envelope-o" aria-hidden="true"></i><a class="email-link" href="mailto:charlotte.taylor7693@gmail.com">charlotte.taylor7693@gmail.com</a></div>
+							<div class="contact-item linked-contact"><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href="https://www.linkedin.com/in/charlottetaylor7693">LinkedIn</a></div>
+							<div class="contact-item linked-contact"><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/charlottechalmer">GitHub</a></div>
+							<div class="contact-item linked-contact"><i class="fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/butternut_Shash">Twitter</a></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -35,7 +42,7 @@
 			<!-- AUTO CONTENT -->
 			<div class="col-xs-9 content auto-content-div" style="display: block">
 				<div class="col-xs-8 col-xs-offset-2 intro">
-					<div class="col-xs-4"><img src="charlotte.jpg"></div>
+					<div class="col-xs-4"><img src="images/charlotte.jpg"></div>
 					<ul class="random-info col-xs-8">
 						<li>Code Craft School of Technology Graduate</li>
 						<li class="indent">Full-Stack Web Development</li>
@@ -52,7 +59,7 @@
 			</div>
 			<!-- ABOUT ME CONTENT -->
 			<div class="col-xs-9 content about-me-div" style="display: none">
-				<img src="aboutme.jpg">
+				<img src="images/aboutme.jpg">
 				<p class="caption body-font"><em>My project planning for the CodeCraft hackathon</em></p>
 				<div class="col-xs-8 col-xs-offset-2 about-me">
 				<h2 class="header-font">About Me</h2>
@@ -73,8 +80,27 @@
 					<ul>
 						<li class="body-font"><a href="https://www.codecraftschool.com/meet-our-november-2016-full-stack-web-development-graduates/">CodeCraft Q&A Interview</a></li>
 						<li class="body-font"><a href="thesis.pdf" onclick="window.open('thesis.pdf', '_blank', 'fullscreen=yes'); return false;">Senior Research Thesis</a></li>
+						<li class="body-font"><a href="https://github.com/charlottechalmer">My GitHub</a></li>
 					</ul>
 				</div>
+			</div>
+			<!-- PORTFOLIO CONTENT -->
+			<div class="col-xs-9 content portfolio-div" style="display: none">
+				<div class="portfolio">
+					<h2 class="portfolio-header header-font">Project Portfolio</h2>
+					<p class="portfolio-header-text body-font">Here, you will find a number of projects that I worked on while in CodeCraft and as side projects. Each project header will either link to the project itself or the GitHub repository depending on the technology used.</p>
+					<div class="portfolio-item">
+						<a href="./projects/html_exercise/index.html" target="_blank"><h3 class="portfolio-item-header header-font">My First Website</h3></a>
+						<p class="body-font">This is an "About Me" site that I built having just learned HTML and CSS.  <strong>Technologies used:</strong> HTML & CSS</p>
+					</div>
+					<div class="portfolio-item">
+						<a href="./projects/bootstrap_build_site/index.html" target="_blank"><h3 class="portfolio-item-header header-font">Rebuild Product Site</h3></a>
+						<p class="body-font"> During our first week at CodeCraft, we were told to rebuild a products website after having learned Twitter Bootstrap. Living in a state that In-n-Out Burger doesn't call home, I decided to "rebuild" their website. <strong>Technologies used:</strong> HTML, CSS & Twitter Bootstrap</p>
+					</div>
+					<div class="portfolio-item"></div>
+					<div class="portfolio-item"></div>
+					<div class="portfolio-item"></div>
+				</div>	
 			</div>
 		</div>
 	</div>
@@ -89,11 +115,28 @@
 		$(".home-button").click(function() {
 			$(".auto-content-div").css({"display": "block"});
 			$(".about-me-div").css({"display": "none"});
+			$(".portfolio-div").css({"display": "none"});
 		});
  		$("#about-me-nav").click(function(){
  			$(".auto-content-div").css({"display": "none"});
+ 			$(".portfolio-div").css({"display": "none"});
  			$(".about-me-div").css({"display": "block"});
  		});
+ 		$("#portfolio-nav").click(function() {
+ 			$(".portfolio-div").css({"display": "block"});
+ 			$(".about-me-div").css({"display": "none"});
+ 			$(".auto-content-div").css({"display": "none"});
+ 		});
+ 		$("#contact-nav").click(function() {
+ 			if($(".contact-div").hasClass("hide")) {
+ 				$(".contact-div").addClass("show").removeClass("hide");
+ 			} else if ($(".contact-div").hasClass("show")) {
+ 				$(".contact-div").addClass("hide").removeClass("show");
+ 			}	
+ 		});
+
+
+
 
 	</script>
 </body>
