@@ -1,0 +1,15 @@
+body {
+  background: white;
+  text-align: center;
+  font-family: "Arial Rounded MT Bold";
+  text-align: center;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+  overflow: auto;
+}

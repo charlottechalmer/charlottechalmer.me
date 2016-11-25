@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.jumbotron {
+  background: url("https://qzprod.files.wordpress.com/2015/04/in-n-out-best-burger-chipotle-mcdonalds-2.jpg?quality=80&strip=all&w=1600") no-repeat center center;
+  background-attachment: fixed;
+  margin-top:-55px;
+  min-height: 500px;
+  color: #ffd700;
+  text-shadow: black 0.4em 0.3em 0.3em;
+  box-shadow: inset 0 -7px 9px -7px rgba(0,0,0,0.9);
+}
+
+p {
+  font-weight: lighter;
+  font-family: "Arial Rounded MT Bold"
+}
