@@ -192,7 +192,7 @@
 @media screen and (max-width: 587px) {
 	.content .intro {
 		width: auto;
-		margin: 0;
+		margin: 0 0 0 -1em !important;
 		padding: 0;
 	}
 	.content .intro img {
@@ -200,9 +200,10 @@
 	}
 
 	.random-info {
-		font-size: 97% !important;
+		font-size: 94% !important;
 		padding-left: 0 !important;
-		margin-top: 2em;
+		margin-top: 1.3em;
+		padding-left: 15px !important;
 	}
 }
 
