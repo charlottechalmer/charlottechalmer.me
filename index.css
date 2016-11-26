@@ -200,7 +200,9 @@
 	}
 
 	.random-info {
+		font-size: 97% !important;
 		padding-left: 0 !important;
+		margin-top: 2em;
 	}
 }
 
