@@ -27,7 +27,8 @@
 }
 
 .header-font {
-	font-family: 'Raleway Dots', Helvetica;
+	font-family: 'Raleway', Helvetica;
+	font-weight: 500;
 	color: #E3CB80;
 }
 
@@ -275,7 +276,6 @@
 
 .about-me h2 {
 	text-align: center;
-	font-weight: 900;
 	color: #E3CB80;
 }
 
@@ -305,7 +305,6 @@
 .about-me-links h3 {
 	text-align: center;
 	margin: 0;
-	font-weight: 900;
 	padding: 0.5em 0 0 0;
 }
 
