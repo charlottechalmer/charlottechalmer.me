@@ -1,0 +1,75 @@
+	.breadcrumb,
+	.form-control:focus,
+	.post-wrapper-top h2,
+	.post-meta a:hover,
+	.title:after{
+		border-color: #0C7A56;
+	}
+
+	.site-title span,
+	.nav > li > a:hover,
+	.nav > li > a:focus,
+	a,
+	.btn-link,
+	.dropdown-menu > li > a:hover,
+	.dropdown-menu > li > a:focus,
+	.dropdown-menu > .active > a,
+	.dropdown-menu > .active > a:hover,
+	.dropdown-menu > .active > a:focus,
+	.nav > li > a:hover,
+	.nav > li > a:focus,
+	.check li:before,
+	.required,
+	.jetmenu li > .megamenu i,
+	.top-bar-section ul li:hover > a,
+	.top-bar-section ul li.active > a,
+	.recent_posts li a.readmore {
+		color:#0C7A56;
+	}
+
+	.nav-tabs.nav-stacked > li > a:hover,
+	.nav-tabs.nav-stacked > li > a:focus,
+	.nav-tabs.nav-stacked > .active > a,
+	.nav-tabs.nav-stacked > .active > a:hover,
+	.nav-tabs.nav-stacked > .active > a:focus,
+	.nav-list > .active > a,
+	.nav-list > .active > a:hover,
+	.nav-list > .active > a:focus,
+	.pager li > a:hover,
+	.pager li > a:focus,
+	.label-primary,
+	.panel-success > .panel-heading,
+	.btn-primary,
+	.tagcloud a,
+	.btn-primary.disabled,
+	.btn-primary[disabled],
+	fieldset[disabled] .btn-primary,
+	.btn-primary.disabled:hover,
+	.btn-primary[disabled]:hover,
+	fieldset[disabled] .btn-primary:hover,
+	.btn-primary.disabled:focus,
+	.btn-primary[disabled]:focus,
+	fieldset[disabled] .btn-primary:focus,
+	.btn-primary.disabled:active,
+	.btn-primary[disabled]:active,
+	fieldset[disabled] .btn-primary:active,
+	.btn-primary.disabled.active,
+	.btn-primary[disabled].active,
+	fieldset[disabled] .btn-primary.active,
+	.topbar,
+	.icn-container,
+	.no-touch .dm-icon-effect-1 .dm-icon.active,
+	.no-touch .dm-icon-effect-1 .dm-icon:hover,
+	.naver .naver-handle:before,
+	button, .button,
+	.title:before,
+	mark,
+	#bbpress-forums li.bbp-body ul.forum li.bbp-forum-topic-count,
+	#bbpress-forums li.bbp-body ul.forum li.bbp-forum-reply-count,
+	.dmtop {
+		background-color: #021615;
+	}
+	
+	.transparent-wrap {
+		background-color: rgba(42, 205, 201, 0.6);
+	}
