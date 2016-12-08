@@ -229,7 +229,24 @@ border: 1px solid red;
 .copyright {
 	text-align: center;
 	color: white;
-	padding-top: 5rem;
-	font-size: .7rem;
+	/*padding-top: 3.7rem;*/
+	font-size: .8rem;
 }
+
+.plaintext-link {
+	text-align: center;
+	padding-top: 3.1rem;
+	font-size: 1.2rem;
+}
+
+.plaintext-link a {
+	color: #0C7A56;
+	text-decoration: underline;
+	transition: 0.5s linear;
+}
+
+.plaintext-link a:hover {
+	color: #E3CB80;
+}
+
 
