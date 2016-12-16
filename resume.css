@@ -40,6 +40,7 @@ html {
 }
 .jumbotron ul  {
 	list-style-type: none;
+	margin-left: -2em;
 	padding-left: 0;
 	padding-right: 0;
 	font-size: 1.2rem;
@@ -129,6 +130,18 @@ border: 1px solid red;
 	padding-left: 1rem;
 }
 
+.project-list {
+	margin-left: -1.5em;
+}
+
+.project-list a, .project-list a:visited, .project-list a:active {
+	color: #0C7A56;
+	text-decoration: underline;
+}
+
+.project-list a:hover {
+	color: #E3CB80;
+}
 
 .tableSkills {
 	list-style-type: none;
@@ -163,6 +176,7 @@ border: 1px solid red;
 
 .connect {
 	text-align: center;
+	margin-top: -0.2em;
 }
 
 .connect .fa {
