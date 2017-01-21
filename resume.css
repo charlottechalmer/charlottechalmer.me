@@ -105,6 +105,27 @@ h5 {
 	padding-right: 1rem
 }
 
+.relevantExperience {
+	padding: 0 4rem 0 4rem;
+}
+
+.relevantExperience td {
+	padding-top: 0.7rem;
+}
+
+.relevantExperience .noPadding td {
+	padding-top: 0 !important;
+}
+
+.relevantExperience .expPadding {
+	padding-top: 0.25rem;
+}
+
+.noPadding td .border {
+	margin-left: -1.5rem;
+	margin-right: -4rem;
+}
+
 
 /*tr, td {
 border: 1px solid red;
