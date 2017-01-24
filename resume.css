@@ -154,6 +154,10 @@ border: 1px solid red;
 	margin-left: -1.5em;
 }
 
+.project-list li {
+	padding-top: 1em;
+}
+
 .project-list a, .project-list a:visited, .project-list a:active {
 	color: #0C7A56;
 	text-decoration: underline;
@@ -196,7 +200,7 @@ border: 1px solid red;
 
 .connect {
 	text-align: center;
-	margin-top: -0.2em;
+	margin-bottom: 1.2em;
 }
 
 .connect .fa {
