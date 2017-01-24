@@ -186,7 +186,7 @@
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
-	padding-top: 3vh;
+	padding-top: 4vh;
 
 }
 
@@ -213,9 +213,6 @@
 
 }
 
-.random-info span {
-	font-size: 0.5em;
-}
 
 .content .intro .random-info .indent {
 	margin-top: -0.5em;
